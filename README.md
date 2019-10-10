@@ -1,9 +1,12 @@
 # [Eindopdracht](https://avans-webdesign.github.io/Eindopdracht/)
 
-Webdesign
+Eindopdracht Webdesign
 
-| --- | --- |
-| Miranda Verheij | 2157236 |
+| Naam | Studentnummer |
+| --- | ---
+| Miranda Verheij | 2157236 | 
 | Lucas de Jong | 2158725 |
 
+KLAS E
 
+https://avans-webdesign.github.io/Eindopdracht/
