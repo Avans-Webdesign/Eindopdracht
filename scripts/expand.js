@@ -1,22 +1,44 @@
-var openTijd = 3000;
+var openTijd = 3000; 
 var sluitTijd = 1000;
 
+// Functie om een bepaald HTML bestand in de #doc div te laden
 function ShowDoc(id, text) {
+
+    // Maak #doc en #doc-title langzaam doorzichtig met de
+    // jQuery 'animate()' methode
     $("#doc, #doc-title").animate({
-        opacity: 0
+        opacity: 0              // Opacity moet 0 worden
     }, {
-        "duration": sluitTijd,
-        "queue": false
+        duration: sluitTijd,    // Doe dit voor [sluitTijd]ms
+        queue: false            // Wacht niet totdat deze animatie afgelopen is
+                                // maar ga in plaats daarvan gelijk door naar de
+                                // volgende stap
     });
-    $("#doc").slideToggle(sluitTijd, function() {
+
+    // Gebruik de jQuery methode 'slideToggle()' om de div te sluiten
+    // in [sluitTijd]ms
+    $("#doc").slideToggle(sluitTijd, function () {
+
+        // Wanneer we hem hebben gesloten en de tekst doorzichtig is,
+        // verander de tekst naar de paramater die we gekregen hebben.
         $("#doc-title").text(text);
-        $("#doc, #doc-title").animate({
-            opacity: 1
-        }, {
-            "duration": sluitTijd,
-            "queue": false
-        });
-        $("#doc").load("./content/" + id + ".html", function() {
+
+        // Laad het bestand van ./content/[id].html in de #doc div.
+        $("#doc").load("./content/" + id + ".html", function () {
+
+            // Wanneer dat gedaan is, maak #doc en #doc-title langzaam
+            // weer niet-doorzichtig
+            $("#doc, #doc-title").animate({
+                opacity: 1              // Opacity moet 1 worden
+            }, {
+                duration: openTijd,     // Doe dit voor [openTijd]ms
+                queue: false            // Wacht niet totdat deze animatie afgelopen is
+                                        // maar ga in plaats daarvan gelijk door naar de
+                                        // volgende stap
+            });
+
+            // Gebruik de jQuery methode 'slideToggle()' om de div te
+            // openen in [openTijd]ms
             $("#doc").slideToggle(openTijd);
         });
     });
