@@ -1,4 +1,5 @@
-var openTijd = 3000; 
+// Open en sluit tijden in milisecondes
+var openTijd = 2000; 
 var sluitTijd = 1000;
 
 // Functie om een bepaald HTML bestand in de #doc div te laden

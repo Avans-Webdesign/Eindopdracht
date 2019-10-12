@@ -16,10 +16,6 @@ nav {
     margin-bottom: 50px;
 }
 
-.titel {
-    padding-bottom: 50px;
-}
-
 .table {
     width: 80%;
     position: relative;
@@ -42,4 +38,17 @@ nav {
 
 .doc-item {
     padding: 20px 80px;
+}
+
+.checklistbox {
+    width: 100%;
+    padding: 20px 70px;
+}
+
+#checklist {
+    margin-top: 40px;
+}
+
+.check {
+    color: rgb(201, 201, 201);
 }

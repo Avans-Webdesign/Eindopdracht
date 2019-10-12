@@ -13,102 +13,155 @@
 <body>
     <!-- Boostrap navigatiebar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light shadow-sm justify-content-center">
+
+        <!-- Dit zie je alleen op de mobiele versie -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- De drie verschillende paginas -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+
+                <!-- Home -->
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
+
+                <!-- Studievaardigheden -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="studievaardigheden.html">Studievaardigheden <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="studievaardigheden.html">Studievaardigheden</a>
                 </li>
+
+                <!-- Contact -->
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="titel text-center">
+
+    < <div class="container-fluid">
+
+        <!-- Titel van de pagina - 'Studievaardigheden' -->
+        <div class="text-center">
             <h1 class="display-4">Studievaardigheden</h1>
-            <p class="lead">Hier kunt u onze actieplannen en reflecties vinden.</p>
+            <p class="lead">Hier kun je onze actieplannen en reflecties vinden.</p>
         </div>
+
+        <!-- We willen dit gedeelte interactief maken, dus we gebruiken een Boostrap row -->
         <div class="row">
+
+            <!-- Lucas' box, 12 wijd in kleine gevallen, 6 wijd in normale gevallen -->
             <div class="col-12 col-md-6">
+
+                <!-- Laat een schaduw om de box zien -->
                 <div class="card shadow-sm">
-                    <div class="card-img-top" alt="...">
-                        <div class="card-header">
-                            <h4 class="my-0 font-weight-normal text-center">Lucas de Jong</h4>
+
+                    <!-- Titelgedeelte van de box -->
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal text-center">Lucas de Jong</h4>
+                    </div>
+
+                    <!-- Tekst gedeelte van de box -->
+                    <div class="card-body">
+                        <div class="card-text">
+
+                            <!-- Een tabel met Lucas' leerling- en klasnummer -->
+                            <table class="table table-light text-center">
+                                <tbody>
+                                    <tr>
+                                        <td>Leerlingnummer</td>
+                                        <td>Klasnummer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2157236</td>
+                                        <td>23INVT1E</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <table class="table table-light text-center">
-                                    <tbody>
-                                        <tr>
-                                            <td>Leerlingnummer</td>
-                                            <td>Klasnummer</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2157236</td>
-                                            <td>23INVT1E</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="btn-group cardButtons" role="group">
-                                <button type="button" class="btn btn-outline-info" onclick="ShowDoc('LucasActieplan', 'Lucas’ actieplan')">Actieplan</button>
-                                <button type="button" class="btn btn-outline-info" onclick="ShowDoc('LucasReflectie', 'Lucas’ reflectie')">Reflectie</button>
-                            </div>
+
+                        <!-- Knoppen om het actieplan en de reflectie te tonen -->
+                        <div class="btn-group cardButtons" role="group">
+
+                            <!-- Call de 'ShowDoc()' methode die wij geschreven hebben 
+                                om het correcte document te laden in de #doc div -->
+                            <button type="button" class="btn btn-outline-info" onclick="ShowDoc('LucasActieplan', 'Lucas’ actieplan')">Actieplan</button>
+                            <button type="button" class="btn btn-outline-info" onclick="ShowDoc('LucasReflectie', 'Lucas’ reflectie')">Reflectie</button>
                         </div>
+
                     </div>
                 </div>
             </div>
+
+            <!-- Miranda's box, 12 wijd in kleine gevallen, 6 wijd in normale gevallen -->
             <div class="col-12 col-md-6">
+
+                <!-- Laat een schaduw om de box zien -->
                 <div class="card shadow-sm">
-                    <div class="card-img-top" alt="...">
-                        <div class="card-header">
-                            <h4 class="my-0 font-weight-normal text-center">Miranda Verheij</h4>
+
+                    <!-- Titelgedeelte van de box -->
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal text-center">Miranda Verheij</h4>
+                    </div>
+
+                    <!-- Tekstgedeelte van de box -->
+                    <div class="card-body">
+                        <div class="card-text">
+
+                            <!-- Een tabel met Miranda's leering- en klasnummer-->
+                            <table class="table table-light text-center">
+                                <tbody>
+                                    <tr>
+                                        <td>Leerlingnummer</td>
+                                        <td>Klasnummer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2157236</td>
+                                        <td>23INVT1E</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <table class="table table-light text-center">
-                                    <tbody>
-                                        <tr>
-                                            <td>Leerlingnummer</td>
-                                            <td>Klasnummer</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2157236</td>
-                                            <td>23INVT1E</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="btn-group cardButtons" role="group">
-                                <button type="button" class="btn btn-outline-info" onclick="ShowDoc('MirandaActieplan', 'Miranda’s actieplan')">Actieplan</button>
-                                <button type="button" class="btn btn-outline-info" onclick="ShowDoc('MirandaReflectie', 'Miranda’s reflectie')">Reflectie</button>
-                            </div>
+
+                        <!-- Knoppen om het actieplan en de reflectie te tonen -->
+                        <div class="btn-group cardButtons" role="group">
+
+                            <!-- Call de 'ShowDoc()' methode die wij geschreven hebben 
+                                om het correcte document te laden in de #doc div -->
+                            <button type="button" class="btn btn-outline-info" onclick="ShowDoc('MirandaActieplan', 'Miranda’s actieplan')">Actieplan</button>
+                            <button type="button" class="btn btn-outline-info" onclick="ShowDoc('MirandaReflectie', 'Miranda’s reflectie')">Reflectie</button>
                         </div>
                     </div>
+
                 </div>
             </div>
+
+            <!-- Dit is de box waarin de documenten komen te staan en is altijd
+                de volledige pagina breed -->
             <div class="col-12">
+
+                <!-- Laat een schaduw om de box zien -->
                 <div class="card shadow-sm">
-                    <div class="card-img-top" alt="...">
-                        <div class="card-header">
-                            <h4 class="my-0 font-weight-normal text-center" id="doc-title">Reflectie</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="row">
-                                    <div class="col doc-item" id="doc"></div>
-                                </div>
+
+                    <!-- Deze titel wordt constant aangepast door de script -->
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal text-center" id="doc-title">Klik op een knop om een document te laden</h4>
+                    </div>
+
+                    <!-- Tekstgedeelte van de box-->
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="row">
+
+                                <!-- In deze div worden alle documenten geladen -->
+                                <div class="col doc-item" id="doc"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
