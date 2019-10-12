@@ -1,36 +1,45 @@
 .container-fluid {
-  padding: 50px;
+    padding: 50px;
 }
 
 .navbar-nav {
-  position: relative;
-  left: 50%;
-  transform: translatex(-50%);
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
 nav {
-  opacity: 0.98;
+    opacity: 0.98;
 }
 
 .card {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .titel {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .table {
-  width: 80%;
-  position: relative;
-  left: -30%;
-  transform: translatex(50%);
+    width: 80%;
+    position: relative;
+    left: -30%;
+    transform: translatex(50%);
 }
 
 .cardButtons {
-  width: 100%;
+    width: 100%;
 }
 
 .nav-item {
-  margin: 0px 30px;
+    margin: 0px 30px;
+}
+
+.sticky-offset {
+    position: sticky;
+    top: 70px;
+}
+
+.doc-item {
+    padding: 20px 80px;
 }
