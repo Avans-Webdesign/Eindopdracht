@@ -16,7 +16,7 @@ function ShowDoc(id, text) {
             "duration": sluitTijd,
             "queue": false
         });
-        $("#doc").load("../content/" + id + ".html", function() {
+        $("#doc").load("./content/" + id + ".html", function() {
             $("#doc").slideToggle(openTijd);
         });
     });
