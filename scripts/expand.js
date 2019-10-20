@@ -2,8 +2,16 @@
 var openTijd = 2000; 
 var sluitTijd = 1000;
 
+var isWorking = false;
+
 // Functie om een bepaald HTML bestand in de #doc div te laden
 function ShowDoc(id, text) {
+
+    // Als we momenteel nog bezig zijn met animaties, skip dit.
+    if(isWorking) { return; }
+
+    // Laat zien dat we bezig zijn met animaties.
+    isWorking = true;
 
     // Maak #doc en #doc-title langzaam doorzichtig met de
     // jQuery 'animate()' methode
@@ -40,7 +48,11 @@ function ShowDoc(id, text) {
 
             // Gebruik de jQuery methode 'slideToggle()' om de div te
             // openen in [openTijd]ms
-            $("#doc").slideToggle(openTijd);
+            $("#doc").slideToggle(openTijd, function() {
+
+                // Als de animatie klaar is, zet isWorking terug naar false.
+                isWorking = false;
+            });
         });
     });
 }
