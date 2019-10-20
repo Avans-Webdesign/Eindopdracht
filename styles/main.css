@@ -60,6 +60,12 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.carousel-control-prev {
+.carousel-control-prev-icon {
     color: red;
 }
+
+.carousel-control-next-icon {
+    color: red;
+}
+
+
