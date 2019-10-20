@@ -51,7 +51,7 @@ function ShowDoc(id, text) {
             $("#doc").slideToggle(openTijd, function() {
 
                 // Als de animatie klaar is, zet isWorking terug naar false.
-                isWorking = false;
+                isWorking = false;  
             });
         });
     });
