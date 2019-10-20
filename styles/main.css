@@ -59,3 +59,7 @@ body {
 .card {
     background-color: rgb(255, 255, 255);
 }
+
+.carousel-control-prev {
+    color: red;
+}
