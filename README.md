@@ -1,4 +1,4 @@
-# [Eindopdracht](https://avans-webdesign.github.io/Eindopdracht/)
+# [Eindopdracht](https://somfic.github.io/Eindopdracht/)
 
 Eindopdracht Webdesign
 
@@ -9,4 +9,4 @@ Eindopdracht Webdesign
 
 KLAS E
 
-[Link naar de site](https://avans-webdesign.github.io/Eindopdracht/)
+[Link naar de site](https://somfic.github.io/Eindopdracht/)
